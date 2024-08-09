@@ -35,22 +35,24 @@
 
     <section id="main-shortcut">
         <h2>Main Shortcut</h2>
+        <p id="main-description"></p> <!-- Main shortcut description will appear here -->
         <div class="buttons">
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fe7fc125ecbc94e34b5bc9f1747fc5672')">Character Fight Simulator</button>
+            <button onclick="loadMainShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fe7fc125ecbc94e34b5bc9f1747fc5672', 'This shortcut is the core of the Character Fight Simulator. It handles the overall logic, including character selection, background setup, and the initiation of the fight sequence. The shortcut dynamically retrieves images, quotes, and other assets from the web to create a fully automated fight scene.')">Character Fight Simulator</button>
         </div>
     </section>
 
     <section id="sub-shortcuts">
         <h2>Sub-Shortcuts</h2>
+        <p id="sub-description"></p> <!-- Sub-shortcut descriptions will appear here -->
         <div class="buttons">
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F8acdddafdff54d40a9c870a1c668197d')">Character Fighter</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F4727f3d87d364d0e8134d2c47ea27197')">Character Standing</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F5afff2d9e13742ad9ce0a8d5584c2407')">Character Punching</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F1136e89e64a6447a9ad4ee4f8d10dd76')">Character Quote Getter</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F65acd0a72a6349f58074a32fdf79f08d')">Punch FX Getter</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7aa37f58322b44e38d37b7e23f314613')">HP / Attack Type</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fdbefb35441304565bae3c057dfdaeac6')">Health Bar</button>
-            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7827885d22c74dacaecb7d2b29ed6b34')">Winner Screen</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F8acdddafdff54d40a9c870a1c668197d', 'This sub-shortcut determines the basic actions of the characters during the fight, such as attacking and defending.')">Character Fighter</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F4727f3d87d364d0e8134d2c47ea27197', 'This sub-shortcut is responsible for positioning the characters on the screen before the fight begins.')">Character Standing</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F5afff2d9e13742ad9ce0a8d5584c2407', 'This sub-shortcut triggers the punching actions during the fight, integrating sound effects and visual feedback.')">Character Punching</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F1136e89e64a6447a9ad4ee4f8d10dd76', 'This sub-shortcut fetches quotes for each character, which are displayed before the fight begins.')">Character Quote Getter</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F65acd0a72a6349f58074a32fdf79f08d', 'This sub-shortcut retrieves and plays the sound effects for punches and other attacks.')">Punch FX Getter</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7aa37f58322b44e38d37b7e23f314613', 'This sub-shortcut manages the health points (HP) and attack types, adjusting the damage dealt during the fight.')">HP / Attack Type</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fdbefb35441304565bae3c057dfdaeac6', 'This sub-shortcut visually represents the health of each character during the fight with a health bar display.')">Health Bar</button>
+            <button onclick="loadSubShortcut('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7827885d22c74dacaecb7d2b29ed6b34', 'This sub-shortcut displays the winner screen after the fight concludes, showing the victorious character and their final stats.')">Winner Screen</button>
         </div>
     </section>
 
@@ -72,13 +74,19 @@
         
         <div class="gif-gallery">
             <h3>Best Examples</h3>
+            <p>Here are some of the most memorable moments generated by the Character Fight Simulator. Each animation was created simply by inputting any two character names and a background name of the user's choice, all through an iOS shortcut. The real magic happens when the quotes align perfectly, making it seem as though the characters are actually interacting. Those moments, where the dialogue feels almost too perfect, never fail to be hilarious. Enjoy these highlights!</p>
             <div class="gif-item">
                 <img src="gifs/example1.gif" alt="Example 1">
-                <p>This GIF demonstrates the intense combat between Batman and Superman, highlighting the power of dynamic attack sequences.</p>
-            </div>
+                <p>This fight stands out to me, perhaps because of how well the colors blend together. What really makes it memorable, though, are the quotes. Knowing that the quotes are pulled directly from the web for each specific "character" adds a layer of humor. When a character like "Animated Dragon," for example, delivers such a quote, it’s so funny to me.</p>
+            </div>            
             <div class="gif-item">
                 <img src="gifs/example2.gif" alt="Example 2">
-                <p>In this GIF, Wonder Woman and Flash face off in a high-speed duel, showcasing the program's ability to handle fast-paced action.</p>
+                <p>This GIF captures a recent Batman vs. Superman showdown, showcasing the evolution of the Character Fight Simulator. After switching the image source from Google to Dogpile, the visuals improved significantly, allowing for less specific but higher-quality results. This fight stands in stark contrast to the earlier Batman vs. Superman matchups that I initially used to test the shortcut, highlighting just how much the simulator has advanced.
+                </p>
+            </div>
+            <div class="gif-item">
+                <img src="gifs/example3.gif" alt="Example 3">
+                <p>DORA SLID FOR BOOTS! This fight is so funny to me. I was running the shortcut with my friend and his little brother when, out of nowhere, Dora appeared like a tag team partner in a fighting game, sliding in to save Boots. The unexpectedness of it all made the moment absolutely hilarious.</p>
             </div>
             <!-- Add more GIFs as needed -->
         </div>

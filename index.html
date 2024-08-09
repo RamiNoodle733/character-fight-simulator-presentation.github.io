@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Fight Simulator - Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Character Fight Simulator</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#main-shortcut">Main Shortcut</a></li>
+                <li><a href="#sub-shortcuts">Sub-Shortcuts</a></li>
+                <li><a href="#demo">Demonstration</a></li>
+                <li><a href="#behind-the-scenes">Behind the Scenes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="title">
+        <h1>Character Fight Simulator</h1>
+        <p>
+            iOS Shortcuts are typically used for small, everyday tasks like playing the most recent album, retrieving location data from an image, or quickly accessing a specific app. However, I wanted to push the boundaries of what’s possible within the iOS Shortcuts framework. The Character Fight Simulator is an ambitious project that transforms this simple automation tool into a dynamic, interactive program. It generates fight animations between any two user-selected characters over a chosen background, all without using any input files. Instead, it retrieves all relevant images and quotes from the web in real-time, and includes features such as randomized attack power and order, various effects, character quotes, and a winner determined by healthbar depletion. This project demonstrates how iOS Shortcuts can be utilized not just for minor tasks, but for creating complex, entertaining experiences.
+        </p>
+    </section>
+
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Welcome to the Character Fight Simulator! This webpage will guide you through the features and development of the iOS Shortcut, providing insights into how it works.</p>
+    </section>
+
+    <section id="main-shortcut">
+        <h2>Main Shortcut</h2>
+        <div class="buttons">
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fe7fc125ecbc94e34b5bc9f1747fc5672')">Character Fight Simulator</button>
+        </div>
+    </section>
+
+    <section id="sub-shortcuts">
+        <h2>Sub-Shortcuts</h2>
+        <div class="buttons">
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F8acdddafdff54d40a9c870a1c668197d')">Character Fighter</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F4727f3d87d364d0e8134d2c47ea27197')">Character Standing</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F5afff2d9e13742ad9ce0a8d5584c2407')">Character Punching</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F1136e89e64a6447a9ad4ee4f8d10dd76')">Character Quote Getter</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F65acd0a72a6349f58074a32fdf79f08d')">Punch FX Getter</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7aa37f58322b44e38d37b7e23f314613')">HP / Attack Type</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2Fdbefb35441304565bae3c057dfdaeac6')">Health Bar</button>
+            <button onclick="loadWebsite('https://preview.scpl.dev/?shortcut=https%3A%2F%2Fwww.icloud.com%2Fshortcuts%2F7827885d22c74dacaecb7d2b29ed6b34')">Winner Screen</button>
+        </div>
+    </section>
+
+    <section id="iframe-display">
+        <div id="iframe-container">
+            <iframe id="website-frame" src="" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+    </section>
+
+    <section id="demo">
+        <h2>Demonstration</h2>
+        <div class="main-video">
+            <p>Watch an example of the Character Fight Simulator in action, complete with sound effects and zooms, showcasing the full capabilities of the software.</p>
+            <video controls>
+                <source src="videos/demo_with_effects.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="gif-gallery">
+            <h3>Best Examples</h3>
+            <div class="gif-item">
+                <img src="gifs/example1.gif" alt="Example 1">
+                <p>This GIF demonstrates the intense combat between Batman and Superman, highlighting the power of dynamic attack sequences.</p>
+            </div>
+            <div class="gif-item">
+                <img src="gifs/example2.gif" alt="Example 2">
+                <p>In this GIF, Wonder Woman and Flash face off in a high-speed duel, showcasing the program's ability to handle fast-paced action.</p>
+            </div>
+            <!-- Add more GIFs as needed -->
+        </div>
+    </section>
+
+    <section id="behind-the-scenes">
+        <h2>Behind the Scenes</h2>
+        <p>Here, you’ll see how the shortcut was built, including the code snippets, tools used, and the logic behind the animation generation.</p>
+        <!-- Add more content or images here -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For more information or collaboration, feel free to reach out!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

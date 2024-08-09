@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid #e50914;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+nav ul li a {
+    color: #e50914;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f5a623;
+}
+
+#title {
+    text-align: center;
+    background-color: #111111;
+    color: #ffffff;
+    padding: 3rem 2rem;
+    border-bottom: 5px solid #e50914;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+#title h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e50914;
+    text-shadow: 3px 3px 8px #000000;
+}
+
+#title p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border-bottom: 5px solid #e50914;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+h2 {
+    color: #f5a623;
+    font-size: 
